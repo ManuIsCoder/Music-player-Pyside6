@@ -2,7 +2,7 @@ from PySide6.QtWidgets import *
 from PySide6.QtCore import *
 from __feature__ import snake_case, true_property
 import sys
-from styles import background_style, frames_style, music_slider_style,music_name_style
+from styles import background_style, frames_style, music_slider_style,music_name_style,frames_middle_style,frames_bottom_style,frames_top_style
 
 imageDir = "granOla"
 
@@ -47,7 +47,7 @@ class musicWindow(QMainWindow):
         self.music_image_layout.add_widget(self.music_image)
         self.frame_music_display.set_layout(self.music_image_layout)
 
-        self.frame_music_display.style_sheet = frames_style
+        self.frame_music_display.style_sheet = frames_top_style
 
     def setup_music_status_frame (self):
         self.music_name = QLabel("La gran ola", alignment = Qt.AlignCenter)
@@ -68,7 +68,7 @@ class musicWindow(QMainWindow):
 
         self.frame_music_status.set_layout(self.big_music_status_layout)
 
-        self.frame_music_status.style_sheet = frames_style
+        self.frame_music_status.style_sheet = frames_middle_style
         self.music_slider.style_sheet = music_slider_style
         self.music_name.style_sheet = music_name_style
 
@@ -97,7 +97,7 @@ class musicWindow(QMainWindow):
 
         self.frame_music_options.set_layout(self.buttons_layout)
 
-        self.frame_music_options.style_sheet = frames_style
+        self.frame_music_options.style_sheet = frames_bottom_style
 
         self.last_button.style_sheet = frames_style + "margin-left: 20px;"
 

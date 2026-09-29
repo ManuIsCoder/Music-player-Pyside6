@@ -1,0 +1,12 @@
+# Ignorar contenido de portadas
+
+musica/portadas/*
+
+# Ignorar contenido de audios
+
+musica/audios/*
+
+# Ignorar archivos arc1 y arc2
+
+music/albumReferences.txt
+music/songReferences.txt

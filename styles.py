@@ -59,3 +59,80 @@ music_name_style = '''
         font-style: italic;
     }
 '''
+
+frames_top_style = '''
+    QFrame {
+        background: grey;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    QPushButton {
+        background: #eaeaea;
+        border-radius: 40px;
+    }
+
+    QPushButton:hover {
+        background: #b1b1b1;
+    }
+
+    QPushButton:pressed {
+        background: #b1b1b1;
+        padding-top: 2px;
+    }
+
+    QLabel{
+        color: white;
+    }
+'''
+
+frames_bottom_style = '''
+    QFrame {
+        background: grey;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    QPushButton {
+        background: #eaeaea;
+        border-radius: 40px;
+    }
+
+    QPushButton:hover {
+        background: #b1b1b1;
+    }
+
+    QPushButton:pressed {
+        background: #b1b1b1;
+        padding-top: 2px;
+    }
+
+    QLabel{
+        color: white;
+    }
+'''
+
+
+frames_middle_style = '''
+    QFrame {
+        background: grey;
+    }
+
+    QPushButton {
+        background: #eaeaea;
+        border-radius: 40px;
+    }
+
+    QPushButton:hover {
+        background: #b1b1b1;
+    }
+
+    QPushButton:pressed {
+        background: #b1b1b1;
+        padding-top: 2px;
+    }
+
+    QLabel{
+        color: white;
+    }
+'''
