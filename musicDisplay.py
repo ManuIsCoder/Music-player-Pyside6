@@ -6,22 +6,20 @@ from styles import background_style, frames_style, music_slider_style,music_name
 
 imageDir = "granOla"
 
-class myFirstWindow(QMainWindow):
+class musicWindow(QMainWindow):
     def setupUI(self,ancho,altura):
         
         self.size = QSize(ancho,altura)
 
 
         self.root_layout = QVBoxLayout()
+        
 
         self.frame_music_display = QFrame()
         self.frame_music_status = QFrame()
         self.frame_music_options = QFrame()
-        self.frame_catalog = QFrame()
 
         self.style_sheet = background_style
-
-        self.frame_catalog.set_fixed_height(altura * 0.06)
 
         self.root_layout.add_widget(self.frame_music_display,50)
         self.root_layout.add_widget(self.frame_music_status,20)
@@ -116,7 +114,7 @@ class myFirstWindow(QMainWindow):
 
 app = QApplication(sys.argv)
 
-ventana = myFirstWindow()
+ventana = musicWindow()
 ventana.setupUI(370,540)
 ventana.show()
 
